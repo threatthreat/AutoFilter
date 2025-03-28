@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '16708960'))
 API_HASH = environ.get('API_HASH', 'dda7630be99593256cb7c520eae0ce6d')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7933550773:AAHaRSIpeoQSCw4XVh1AxiiZ1kSmbo54tso")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8121297625:AAGyLjO6p4_XXTwuDfWrLipGB8g_jyDFFjw")
 
 # ============================
 # Bot Settings Configuration
@@ -67,7 +67,7 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bahegek318:n6rrzEYVVJGE9g21@cluster0.bbmdq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://heisenberg:walder1234@cluster0.wkum1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://heisenberg8007:walder123@cluster1.doy1l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
