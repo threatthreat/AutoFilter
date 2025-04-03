@@ -25,7 +25,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 # ============================
 # Bot Settings Configuration
 # ============================
-CACHE_TIME = int(environ.get('CACHE_TIME', 1100))
+CACHE_TIME = int(environ.get('CACHE_TIME', 600))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://envs.sh/WdA.jpg https://envs.sh/Wdj.jpg')).split()  # Sample pic
