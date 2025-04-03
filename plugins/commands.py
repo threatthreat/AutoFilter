@@ -37,10 +37,10 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ᴄʜᴀᴛ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('• ᴍᴀsᴛᴇʀ •', url="https://t.me/movie_Film_series1"),
-                    InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ •', url='https://t.me/MovieByte_7')
+                    InlineKeyboardButton('• ᴍᴀsᴛᴇʀ •', url="https://t.me/cosmic_freak"),
+                    InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ •', url='https://t.me/codeflixsupport')
                 ],[
-                    InlineKeyboardButton('• ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ •', url="https://t.me/movie_Film_series1")
+                    InlineKeyboardButton('• ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ •', url="https://t.me/codeflix_bots")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -468,12 +468,12 @@ async def start(client, message):
             else:
                 if not await check_verification(client, message.from_user.id) and VERIFY == True:
                     btn = [[
-                       InlineKeyboardButton("ᴄʟɪᴄᴋ ᴛᴏ ᴠᴇʀɪғʏ & ᴅᴏᴡɴʟᴏᴀᴅ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
+                       InlineKeyboardButton("ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪғʏ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
                        ],[
                        InlineKeyboardButton("ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ", url=HOW_TO_VERIFY)
                    ]]
                     l = await message.reply_text(
-                        text=f"<blockquote><b>ʜᴇʏ ʙʀᴏ,\n\n ‼️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ ‼️\n\n ›› ᴘʟᴇᴀsᴇ ᴠᴇʀɪғʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅs ғᴏʀ {VERIFY_EXPIRE} ʜᴏᴜʀs ✅</blockquote></b>",
+                        text=f"<blockquote><b>ʜᴇʏ ʙʀᴏ,\n\n ‼️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ ‼️\n\n ›› ᴘʟᴇᴀsᴇ ᴠᴇʀɪғʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ {VERIFY_EXPIRE} ʜᴏᴜʀs ✅</blockquote></b>",
                         protect_content=False,
                         reply_markup=InlineKeyboardMarkup(btn)
                     )
@@ -548,12 +548,12 @@ async def start(client, message):
             else:
                if not await check_verification(client, message.from_user.id) and VERIFY == True:
                    btn = [[
-                       InlineKeyboardButton("ᴄʟɪᴄᴋ ᴛᴏ ᴠᴇʀɪғʏ & ᴅᴏᴡɴʟᴏᴀᴅ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
+                       InlineKeyboardButton("ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪғʏ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
                    ],[
                         InlineKeyboardButton("ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ", url=HOW_TO_VERIFY)
                    ]]
                    l = await message.reply_text(
-                       text=f"<blockquote><b>ʜᴇʏ ʙʀᴏ,\n\n ‼️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ ‼️\n\n ›› ᴘʟᴇᴀsᴇ ᴠᴇʀɪғʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅs ғᴏʀ {VERIFY_EXPIRE} ʜᴏᴜʀs ✅\n\n ›› ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇs ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ᴛᴀᴋᴇ ᴘʀᴇᴍɪᴜᴍ sᴇʀᴠɪᴄᴇs 💶 sᴇɴᴅ /plan ᴛᴏ ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ.</blockquote></b>",
+                       text=f"<blockquote><b>ʜᴇʏ ʙʀᴏ,\n\n ‼️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ ‼️\n\n ›› ᴘʟᴇᴀsᴇ ᴠᴇʀɪғʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ {VERIFY_EXPIRE} ʜᴏᴜʀs ✅\n\n ›› ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇs ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ᴛᴀᴋᴇ ᴘʀᴇᴍɪᴜᴍ sᴇʀᴠɪᴄᴇs.</blockquote></b>",
                        protect_content=False,
                        reply_markup=InlineKeyboardMarkup(btn)
                    )
@@ -625,12 +625,12 @@ async def start(client, message):
     else:
         if not await check_verification(client, message.from_user.id) and VERIFY == True:
             btn = [[
-              InlineKeyboardButton("ᴄʟɪᴄᴋ ᴛᴏ ᴠᴇʀɪғʏ & ᴅᴏᴡɴʟᴏᴀᴅ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
+              InlineKeyboardButton("ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪғʏ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
            ],[
               InlineKeyboardButton("ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ", url=HOW_TO_VERIFY)
            ]]
             l = await message.reply_text(
-                text=f"<blockquote><b>ʜᴇʏ ʙʀᴏ,\n\n ‼️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ ‼️\n\n ›› ᴘʟᴇᴀsᴇ ᴠᴇʀɪғʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅs ғᴏʀ {VERIFY_EXPIRE} ʜᴏᴜʀs ✅\n\n ›› ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇs ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ᴛᴀᴋᴇ ᴘʀᴇᴍɪᴜᴍ sᴇʀᴠɪᴄᴇs 💶 sᴇɴᴅ /plan ᴛᴏ ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ.</blockquote></b>",
+                text=f"<blockquote><b>ʜᴇʏ ʙʀᴏ,\n\n ‼️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ ‼️\n\n ›› ᴘʟᴇᴀsᴇ ᴠᴇʀɪғʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ {VERIFY_EXPIRE} ʜᴏᴜʀs ✅\n\n ›› ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇs ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ᴛᴀᴋᴇ ᴘʀᴇᴍɪᴜᴍ sᴇʀᴠɪᴄᴇs.</blockquote></b>",
                 protect_content=False,
                 reply_markup=InlineKeyboardMarkup(btn)
             )
