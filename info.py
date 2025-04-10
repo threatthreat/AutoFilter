@@ -91,8 +91,8 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/Bombardiro_Crocodiloa
 # Link Shortener Configuration
 # ============================
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '221559faa5a0d43dc2da97cc3f6848feff6549c2')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'vipurl.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '350e1c2b56b3162b0259542340b957f200deebe3')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/how_to_download_0909')  # Tutorial video link for opening shortlink website/shortlink https://vipurl.in/ 350e1c2b56b3162b0259542340b957f200deebe3
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
